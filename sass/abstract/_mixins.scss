@@ -1,0 +1,48 @@
+@mixin clearfix{
+  &::after{
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
+
+@mixin absCenter{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0.25);
+}
+
+
+//MEDIA QUERY MANAGER
+/*
+0 - 600px:     PHONE
+600 - 900px:   TABLET PORTRAIT
+900 - 1200px:  TABLET LANDSCAPE
+[1200px - 1800px] --> IS WHERE OUR NORMAL STYLES APPLY
+1800px + :     BIG DESKTOP
+
+$breakpoint ARGUMENT CHOICES:
+- PHONE
+- TAB-PORT
+-TAB-LAND
+-BIG-DESKTOP
+
+order: BASE + TYPOGRAPHY > GENERAL LAYOUT + GRID > PAGE LAYOUT > COMPONENTS
+
+1em = 16px;
+*/
+@mixin respond($breakpoint){
+   @if $breakpoint == phone{
+     @media(max-width: 37.5em){@content };//600px / 16px
+   }
+   @if $breakpoint == tab-port{
+     @media(max-width: 56.25em){@content };
+   }
+   @if $breakpoint == tab-land{
+     @media(max-width: 75em){@content };
+   }
+   @if $breakpoint == big-desktop{
+     @media(min-width: 112.5em){@content };
+   }
+}
