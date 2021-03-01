@@ -668,7 +668,7 @@ body {
 
 .header {
   height: 95vh;
-  background-image: linear-gradient(to right, #010656ab, #01003afa), url("./img/las_vegas_casino.jpg");
+  background-image: linear-gradient(to right, #010656ab, #01003afa), url("../img/las_vegas_casino.jpg");
   background-size: cover;
   background-position: top;
   position: relative;
