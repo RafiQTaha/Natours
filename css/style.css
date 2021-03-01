@@ -74,8 +74,7 @@ body {
   font-weight: 400;
   /* font-size: 16px; */
   line-height: 1.7;
-  color: #777;}
-  ..navigation__checkbox:checked ~ body{ overflow: hidden;}
+  color: #777; }
 
 .heading-primary {
   color: #fff;
