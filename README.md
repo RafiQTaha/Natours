@@ -1,2 +1,2 @@
 # Natours
-Sass (Advanced Css) From Jonas Schmedtmann Course
+Sass (Advanced Css) From Udemy Jonas Schmedtmann Course
